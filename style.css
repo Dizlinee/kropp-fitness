@@ -658,6 +658,92 @@ h1, h2, h3, h4, h5, h6 {
 .location-description {
     max-width: 490px;
 }
+.family {
+    background-color: var(--color-dark-alternate);
+}
+.family-header {
+    padding-top: 132px;
+    padding-bottom: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 7px;
+}
+.family-description {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-light);
+    line-height: 1.65;
+}
+/* VIEWPORT */
+    .family-body {
+    overflow: hidden;
+    width: 100%;
+    padding-block: 40px;
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+    }
+
+    /* TRACK */
+    .carousel-wrapper {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+
+    animation: carousel-scroll 30s linear infinite;
+    will-change: transform;
+    }
+
+    
+    .family-body:hover .carousel-wrapper {
+    animation-play-state: paused;
+    }
+
+    
+    .family-image {
+    flex-shrink: 0;
+
+    height: clamp(180px, 28vh, 320px);
+    width: auto;
+
+    object-fit: cover;
+    border-radius: 1px;
+
+    transition: transform 0.35s ease, filter 0.35s ease;
+    transform-origin: center;
+
+    filter: brightness(0.95);
+    }
+
+    .family-image:hover {
+    transform: scale(1.06);
+    filter: brightness(1.05);
+    }
+
+    
+    @keyframes carousel-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
 
 @media (max-width: 1919px) {
     .motivation-card-image {
@@ -718,7 +804,6 @@ h1, h2, h3, h4, h5, h6 {
     .location {
         display: flex;
         flex-direction: column-reverse;
-
     }
 }
 
