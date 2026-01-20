@@ -814,6 +814,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
+    .family-title {
+        font-size: 3em; 
+    }
     .button {
         padding-inline: 18px;
     }
@@ -881,5 +884,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     .location-description:not(:last-child) {
         margin-bottom: 20px;
+    }
+
+    .family-header {
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
 }
