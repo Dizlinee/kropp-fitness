@@ -718,7 +718,7 @@ h1, h2, h3, h4, h5, h6 {
     .family-image {
     flex-shrink: 0;
 
-    height: clamp(180px, 28vh, 320px);
+    height: clamp(340px, 38vh, 520px);
     width: auto;
 
     object-fit: cover;
@@ -767,6 +767,12 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 20px;
         row-gap: 10px;
         padding-inline: 15px;
+    }
+    .family-image {
+        height: clamp(260px, 32vh, 400px);
+    }
+    .carousel-wrapper {
+        gap: 15px; /* less gap for smaller screens */
     }
     .header-menu-link {
         display: inline-flex;
@@ -828,6 +834,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     .banner-info {
         margin-bottom: 5px;
+    }
+    .family-image {
+        height: clamp(180px, 28vh, 260px);
+    }
+    .carousel-wrapper {
+        gap: 10px; /* tight spacing for mobile */
     }
     
     .motivation-card, .motivation-item:nth-child(even) .motivation-card {
