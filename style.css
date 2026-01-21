@@ -871,6 +871,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer-column-title {
     font-size: clamp(18px, 1.15vw, 22px);
+    color: var(--color-light);
 }
 .footer-column-title:not(:last-child) {
     margin-bottom: 15px;
@@ -903,7 +904,21 @@ h1, h2, h3, h4, h5, h6 {
     column-gap: 62px;
     grid-template-columns: 20.77% repeat(3, 1fr);
 }
+.footer-subscribe {
+    position: relative;
 
+}
+.footer-subscribe-button {
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: var(--border);
+    background-color: transparent;
+    background: url(./icons/arrow.svg) center/70% no repeat;
+}
 .footer-extra {
     padding-block: 15px;
     background-color: var()var(--color-dark-alternate);
