@@ -922,7 +922,7 @@ svg * [stroke] { stroke: currentColor }
     border-radius: 50%;
     border: var(--border);
     background-color: transparent;
-    background: url(./icons/arrow.svg) center/70% no repeat;
+    background: url(/kropp-fitness/icons/arrow.svg) center/70% no repeat;
 }
 .footer-logo-image {
     height: auto;
